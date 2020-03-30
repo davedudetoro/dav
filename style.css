@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+position: static;
+top: 50%;
+left: 50%;
+transform: translate(0%,54.7%);
+}

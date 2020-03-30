@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        .frame1 {
+            width: 100%;
+            height: 47em;
+            float: left;
+            background-color: white;
+        }
+        .frame2 {
+            width:  100%;
+            height: 25em;
+            float: left;
+            background: linear-gradient(to bottom, #ffffff -1%, #0a0e49 86%);
+        }
+        .frame3 {
+            width: 100%;
+            height: 25em;
+            float: left;
+            background-color: #0A0E49;
+        }
+        .frame4 {
+            width: 33.33%;
+            height: 1em;
+            float: left;
+        }
+        .frame5 {
+            width: 33.33%;
+            height: 1em;
+            float: left;
+        }
+        .frame6 {
+            width: 33.3%;
+            height: 1em;
+            float: left;
+        }
+        .static {
+        position:absolute;
+        background: white;
+        }
+        .static:hover {
+        opacity:0;
+        }
+        h1 {
+            font-family: avenir, sans-serif;
+            font-size: 40px;
+            color: #0A0E49;
+            line-height: 125%;
+            padding-top: 0px;
+        }
+        h2 {
+            font-family: avenir, sans-serif;
+            font-size: 30px;
+            font-weight: lighter;
+            color: #0A0E49;
+            line-height: 120%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Neutrogena</title>
+</head>
+<body>
+    <div class="frame1"><img src="images/neutrointro.gif" width="1385"></div>
+    <div class="frame2">
+        <center><h1>Welcome to Neutrogena <br>Home to our HydroBoost Moisturizer</h1></center><center><h2>Just Healthy Beautiful Skin. <br> Stay Hydrated!<br>Stay Smooth! <br>Stay Supple!</h2></center></div>
+    <div class="frame3">
+        <div class="frame4"><img class="static" src="images/bluestatic.png" width="400px" height="400px"><img class="active" src= "images/blueneutro.gif" width="380px" height="380px"></div>
+        <div class="frame5"><img class="static" src="images/orangestatic.png" width="400px" height="400px"><img class="active" src= "images/orangeneutro.gif" width="380px" height="380px"></div>
+        <div class="frame6"><img class="static" src="images/whitestatic.png" width="400px" height="400px"><img class="active" src= "images/whiteneutro.gif" width="380px" height="380px"></div>
+    </div>
+    <div class="frame3">
+        <div class="frame4"><img class="static" src="images/whitestatic.png" width="400px" height="400px"><img class="active" src= "images/whiteneutro.gif" width="380px" height="380px"></div>
+        <div class="frame4"><img class="static" src="images/bluestatic.png" width="400px" height="400px"><img class="active" src= "images/blueneutro.gif" width="380px" height="380px"></div>
+        <div class="frame6"><img class="static" src="images/orangestatic.png" width="400px" height="400px"><img class="active" src= "images/orangeneutro.gif" width="380px" height="380px"></div>
+    </div>
+    <div class="frame3">
+        <div class="frame4"><img class="static" src="images/bluestatic.png" width="400px" height="400px"><img class="active" src= "images/blueneutro.gif" width="380px" height="380px"></div>
+        <div class="frame4"><img class="static" src="images/orangestatic.png" width="400px" height="400px"><img class="active" src= "images/orangeneutro.gif" width="380px" height="380px"></div>
+        <div class="frame6"><img class="static" src="images/whitestatic.png" width="400px" height="400px"><img class="active" src= "images/whiteneutro.gif" width="380px" height="380px"></div>
+    <div class="box">
+        <img id="ripple" src="images/watertext.png">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
+    <script src="jquery.ripple.js"></script>
+    <script type="text/javascript"> 
+        $(function(){
+        $("#ripple").ripple();
+        })
+    </script>
+    </div>
+</body>
+</html>
